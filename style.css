@@ -1,0 +1,618 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    background: #803823;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+label.logo {
+
+    line-height: 55px;
+    padding: 0 100px;
+}
+
+.logoImg {
+    width: 60px;
+    height: 60px;
+}
+
+header ul {
+    float: right;
+    margin-right: 20px;
+}
+
+header ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+header ul li a {
+    color: white !important;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+header li a.active,
+header li a:hover {
+    background: #97452c;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+main {
+
+    margin-top: 60px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/shoemaker/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.mainText {
+    width: 600px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(202, 202, 202, 0.267);
+}
+
+.mainText div p:nth-child(3) {
+    margin-bottom: 5px;
+}
+
+.mainText div p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.mainText div p:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+
+/* Services */
+
+.services_container {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.services {
+    padding: 20px 0 0 0;
+}
+
+
+.section_title {
+    line-height: 32px !important;
+    padding: 10px 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(202 202 202);
+}
+
+.services_item {
+    margin: 15px 0;
+}
+
+.services_item a {
+    color: inherit;
+}
+
+.services_item a span {
+    margin: 10px 0;
+}
+
+
+.services_item a:hover {
+    color: inherit;
+    cursor: pointer;
+    background-color: none;
+}
+
+.services_row {
+    width: 100% !important;
+}
+
+.img_container {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.50s;
+}
+
+
+.img_overflow {
+    overflow: hidden !important;
+}
+
+.img_container:hover {
+    transform: scale(1.1);
+    transition: 0.50s;
+}
+
+.services_1 {
+    background-image: url("./img/shoemaker/shoe_repair/5.jpg");
+}
+
+
+.services_2 {
+    background-image: url("./img/shoemaker/7.jpg");
+    background-position: 65%;
+}
+
+.services_3 {
+    background-image: url("./img/shoemaker/8.jpg");
+}
+
+.services_4 {
+    background-image: url("./img/shoemaker/9.jpg");
+    background-position: 60%;
+}
+
+
+/* Order Service */
+
+.order_service {
+    width: 100%;
+}
+
+.order_service_text {
+    padding: 0 10%;
+}
+
+table{
+    text-align: center;
+    color: white;
+    background: #803823;
+    margin: 20px 0;
+}
+
+table, tr, th {
+    border: 1px solid!important;
+}
+
+table tr th{
+    padding: 20px 20px!important;
+}
+
+/* Services Modal */
+
+.examples {
+    margin-bottom: 20px;
+}
+
+#services_modal_container {
+    overflow-y: initial !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.712);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#services_modal_container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.services_modal {
+    background-color: #fff;
+    width: 80% !important;
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 35px 0;
+    padding-left: 39px !important;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn_style {
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 7px 13px;
+    border: 0px solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: #97452c;
+}
+
+.btn_style:hover {
+    color: white;
+    background: #6e301d;
+    transition: .5s;
+}
+
+.services_5 {
+    background-image: url("./img/shoemaker/shoe_repair/10.jpg");
+    background-position: 100%;
+}
+
+.services_6 {
+    background-image: url("./img/shoemaker/shoe_repair/11.jpg");
+}
+
+.services_7 {
+    background-image: url("./img/shoemaker/shoe_repair/12.jpg");
+}
+
+.services_8 {
+    background-image: url("./img/shoemaker/shoe_repair/13.jpg");
+}
+
+.services_9 {
+    background-image: url("./img/shoemaker/shoe_repair/14.jpg");
+    background-position: 100%;
+}
+
+.services_10 {
+    background-image: url("./img/shoemaker/shoe_repair/15.jpg");
+}
+
+.services_11 {
+    background-image: url("./img/shoemaker/shoe_repair/16.jpg");
+}
+
+.services_12 {
+    background-image: url("./img/shoemaker/shoe_repair/17.jpg");
+}
+
+.services_13 {
+    background-image: url("./img/shoemaker/restoration/1.jpg");
+    background-position: 80%;
+}
+
+.services_14 {
+    background-image: url("./img/shoemaker/restoration/2.jpg");
+}
+
+.services_15 {
+    background-image: url("./img/shoemaker/restoration/3.jpg");
+}
+
+.services_16 {
+    background-image: url("./img/shoemaker/zipper_replacement/1.jpg");
+    background-position: 50%;
+}
+
+.services_17 {
+    background-image: url("./img/shoemaker/zipper_replacement/2.jpg");
+}
+
+.services_18 {
+    background-image: url("./img/shoemaker/zipper_replacement/3.jpg");
+    background-position: 45%;
+}
+
+.services_19 {
+    background-image: url("./img/shoemaker/zipper_replacement/4.jpg");
+    background-position: 50%;
+}
+
+.services_20 {
+    background-image: url("./img/shoemaker/clothing_repair/1.jpg");
+}
+
+.services_21 {
+    background-image: url("./img/shoemaker/clothing_repair/2.jpg");
+}
+
+.services_22 {
+    background-image: url("./img/shoemaker/clothing_repair/3.jpg");
+}
+
+.services_23 {
+    background-image: url("./img/shoemaker/clothing_repair/4.jpg");
+}
+
+.services_24 {
+    background-image: url("./img/shoemaker/examples/1.jpg");
+}
+
+.services_25 {
+    background-image: url("./img/shoemaker/examples/2.jpg");
+}
+
+.services_26 {
+    background-image: url("./img/shoemaker/examples/3.jpg");
+}
+
+.services_27 {
+    background-image: url("./img/shoemaker/examples/4.jpg");
+}
+
+.services_28 {
+    background-image: url("./img/shoemaker/examples/5.jpg");
+}
+
+.services_29 {
+    background-image: url("./img/shoemaker/examples/6.jpg");
+}
+
+/* Slider */
+
+
+.slider {
+    width: 80%;
+    height: 300px;
+}
+
+
+.img_container_example {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.slider-icon {
+    width: 58px;
+    height: 58px;
+    background-size: cover;
+}
+
+.slider-icon:hover {
+    cursor: pointer;
+}
+
+.slide-left {
+    background-image: url("./img/icons/left-arrow.png");
+}
+
+.slide-right {
+    background-image: url("./img/icons/arrow-right.png");
+}
+
+
+/* Map */
+
+.map-container {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+}
+
+/* Info */
+
+.info {
+    width: 100%;
+    min-height: 80px;
+    justify-content: center;
+}
+
+.info_img {
+    background-image: url("./img/logo.png");
+    width: 50px;
+    height: 50px;
+}
+
+.footer-logo {
+    float: left;
+    margin-right: 10px;
+}
+
+.info-item {
+    margin: 20px 0 !important;
+    justify-content: center !important;
+    width: 265px;
+}
+
+
+
+/* Job-Info */
+
+.job-info h2 {
+    margin-bottom: 50px;
+}
+
+.circles {
+    width: 100%;
+    padding: 0 120px;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.circles_circle {
+    margin: 20px 0;
+    color: #FFF;
+    flex-direction: column;
+    padding: 0 !important;
+    position: relative;
+}
+
+.circles_circle hr {
+    width: 100%;
+    margin-top: 25px;
+    color: black;
+    opacity: 1;
+}
+
+
+
+.circle_number {
+    position: absolute;
+    top: 0;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fe6009;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.circle_text {
+    color: black;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+    color: white;
+    background: #97452c;
+}
+
+.footer_span{
+    margin-left: 5px;
+    margin-right: 10px!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 993px) {
+    label.logo {
+        padding-left: 30px;
+    }
+
+    header ul li a {
+        font-size: 16px;
+    }
+
+    .services_modal {
+        max-height: 80%;
+    }
+
+    .img_container_example {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 858px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4e2316;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    header li a:hover,
+    header li a.active {
+        background: none;
+        color: black !important;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .circles {
+        padding: 0 100px;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .img_container_example {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .img_container_example {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .img_container_example {
+        width: 80px;
+        height: 80px;
+    }
+
+    .slider-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
